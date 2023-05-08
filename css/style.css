@@ -9,6 +9,7 @@
 
 html,
 body {
+  height: 100%;
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -113,10 +114,71 @@ main section .satisfied-customers .opinions .box p {
 }
 
 @media (min-width: 1440px) {
+  main {
+    height: 100%;
+  }
+  main section {
+    height: 100%;
+  }
   main section .desktop {
     display: block;
   }
   main section .mobile {
     display: none;
+  }
+  main section .satisfied-customers {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: repeat(2, 300px);
+    gap: 0;
+    -moz-column-gap: 15rem;
+         column-gap: 15rem;
+    min-width: 80%;
+    padding: 0;
+  }
+  main section .satisfied-customers .description {
+    max-width: 100%;
+    text-align: left;
+  }
+  main section .satisfied-customers .description h1 {
+    max-width: 300px;
+  }
+  main section .satisfied-customers .rating {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0rem;
+  }
+  main section .satisfied-customers .rating .box {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  main section .satisfied-customers .rating .box .stars img {
+    padding: 0 0.3rem;
+  }
+  main section .satisfied-customers .rating .box h2 {
+    flex-grow: 1;
+    text-align: right;
+  }
+  main section .satisfied-customers .rating .first {
+    right: 6rem;
+  }
+  main section .satisfied-customers .rating .second {
+    right: 3rem;
+  }
+  main section .satisfied-customers .opinions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    grid-column: 1/3;
+  }
+  main section .satisfied-customers .opinions .first {
+    top: -2rem;
+  }
+  main section .satisfied-customers .opinions .third {
+    bottom: -2rem;
   }
 }/*# sourceMappingURL=style.css.map */
