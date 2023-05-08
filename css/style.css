@@ -13,4 +13,110 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: hsl(303, 10%, 53%);
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main section .desktop {
+  display: none;
+}
+main section .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+main section .bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+main section .satisfied-customers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: min(100%, 400px);
+  padding: 5rem 1.5rem;
+}
+main section .satisfied-customers .description {
+  text-align: center;
+}
+main section .satisfied-customers .description .title {
+  padding: 2rem 0;
+  font-size: 3rem;
+  line-height: 0.8;
+  color: hsl(300, 43%, 22%);
+}
+main section .satisfied-customers .description p {
+  font-size: 1.2rem;
+}
+main section .satisfied-customers .rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+main section .satisfied-customers .rating .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0.6rem;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  text-align: center;
+  background-color: hsl(300, 24%, 96%);
+}
+main section .satisfied-customers .rating .box .stars img {
+  padding: 0 0.3rem 0.8rem 0.3rem;
+}
+main section .satisfied-customers .rating .box h2 {
+  font-size: 1.2rem;
+  color: hsl(300, 43%, 22%);
+}
+main section .satisfied-customers .opinions .box {
+  position: relative;
+  margin: 1rem 0;
+  padding: 2.2rem 1.8rem;
+  border-radius: 0.6rem;
+  background-color: hsl(300, 43%, 22%);
+}
+main section .satisfied-customers .opinions .box img {
+  position: absolute;
+  height: 40px;
+  border-radius: 50%;
+}
+main section .satisfied-customers .opinions .box h3 {
+  font-size: 1.2rem;
+  padding-left: 4.5rem;
+  color: hsl(0, 0%, 100%);
+}
+main section .satisfied-customers .opinions .box h4 {
+  padding-left: 4.5rem;
+  padding-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: hsl(333, 80%, 67%);
+}
+main section .satisfied-customers .opinions .box p {
+  font-size: 1.2rem;
+  color: hsl(300, 24%, 96%);
+}
+
+@media (min-width: 1440px) {
+  main section .desktop {
+    display: block;
+  }
+  main section .mobile {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
